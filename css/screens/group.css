@@ -1,0 +1,30 @@
+.group-header {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.group-list {
+    padding: 20px 40px;
+    font-size: 18px;
+}
+
+.group-list__column {
+    margin-bottom: 20px;
+}
+
+.group-list__open {
+    font-weight: bold;
+}
+
+.group-list__content {
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.group-list__compo {
+    margin-bottom: 7px;
+}

@@ -1,0 +1,16 @@
+.setting-box {
+    margin: 30px;
+    border-top: 1px solid rgba(0,0,0,0.4);
+    padding: 40px 20px;
+}
+
+.setting-box__title {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.setting-box__name {
+    margin-left: 30px;
+    font-size: 20px;
+}

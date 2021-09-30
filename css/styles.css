@@ -1,0 +1,29 @@
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/big-screen.css";
+
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/music.css";
+@import "screens/more.css";
+@import "screens/group.css";
+@import "screens/chat.css";
+
+@import "reset.css";
+@import "variables.css";
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.chaticon {
+    background-color: var(--lime);
+    padding: 7px 10px 7px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    position: fixed;
+    right: 20px;
+    top: 125px;
+}
+

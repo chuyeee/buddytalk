@@ -1,0 +1,90 @@
+.searchbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 30px;
+    padding: 10px 30px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 10px;
+    color: rgba(0,0,0,0.4);
+}
+
+.music-chart {
+    margin: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 580px;
+}
+
+.music-chart__title {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color:  rgba(0,0,0,0.6);
+    margin-bottom: 50px;
+}
+
+.music-char__text {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:black;
+   
+}
+
+.music-chart__song{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px
+}
+
+.music-chart__img {
+    width:70px;
+    border-radius: 10px;
+}
+
+.music-chart__song__column2 {
+    width: 200px;
+    justify-content: flex-start;
+}
+
+.rank {
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.title {
+    font-weight: bold;
+    font-weight: 22px;
+}
+
+.music-chart__song__column {
+    display: flex;
+    align-items: center;
+}
+
+.music-chart__heart {
+    margin-right: 8px;
+    color: #e9ecef;
+}
+
+@keyframes cuteheart {
+    0% {
+        transform: none;
+        color: white;
+    }
+    50% {
+        transform: scale(1.5);
+        color: tomato;
+    }
+    100% {
+        transform: none;
+        color: white;
+    }
+}
+
+.music-chart__heart:hover {
+    will-change: transform;
+    animation: cuteheart 0.8s linear infinite;
+}

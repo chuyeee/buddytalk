@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>buddy chat</title>
+  </head>
+  <body class="chat-screen">
+    <div class="status-bar chat">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>17:33</span>
+      </div>
+      <div class="status-bar__column">
+        <span>88%</span>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <main>
+      <div class="group-header chat__h">
+        <div class="group-header__column">
+          <a href="chats.html">
+            <i class="fas fa-chevron-circle-left"></i>
+          </a>
+        </div>
+        <div class="group-header__column">
+          <span clas="group-header__title">group</span>
+        </div>
+        <div class="group-header__column">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="main-chat">
+        <div class="chat__time">today</div>
+
+        <div class="chat__message">
+          <div>
+            <img
+              class="chat__profileimg"
+              src="https://pbs.twimg.com/profile_images/866809686888251392/84CZ5NQx_400x400.jpg"
+            />
+          </div>
+          <div class="chat__text">
+            <div class="chat__name">user2</div>
+            <div class="chat__column">
+              <div class="chat__content">hey</div>
+              <div class="chat__chkread">17:33</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat__message reply">
+          <div class="chat__text">
+            <div class="chat__column">
+              <div class="chat__content">do you want to come out now?</div>
+              <div class="chat__chkread">17:33</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="reply-input">
+        <div class="reply__column">
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="reply__column">
+          <input type="text" placeholder="text.." />
+          <i class="far fa-laugh-squint fa-lg"></i>
+          <button>
+            <i class="fas fa-arrow-up"></i>
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <div class="big-screen">
+      <span>The screen size is too large. Mobile access, please.</span>
+    </div>
+
+    <script>
+      src = "https://kit.fontawesome.com/6478f529f2.js";
+      crossorigin = "anonymous";
+    </script>
+  </body>
+</html>

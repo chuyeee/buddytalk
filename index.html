@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>welcome, buddy!</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>17:33</span>
+      </div>
+      <div class="status-bar__column">
+        <span>88%</span>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to HeyBuddy</h1>
+      <p class="welcome-header__text">
+        If you have a buddy account, login with your user ID
+      </p>
+    </header>
+
+    <form action="friends.html" method="get" class="login-form">
+      <div class="login-form__column">
+        <input
+          class="login-form__input"
+          name="username"
+          type="text"
+          placeholder="user ID"
+        />
+        <input
+          class="login-form__input"
+          name="password"
+          type="password"
+          placeholder="password"
+        />
+      </div>
+      <div class="login-form__column">
+        <input class="log-form__btn" type="submit" value="login" />
+      </div>
+    </form>
+    <a class="login-form__url" href="#">find account or password</a>
+
+    <div class="big-screen">
+      <span>The screen size is too large. Mobile access, please.</span>
+    </div>
+
+    <script>
+      src = "https://kit.fontawesome.com/6478f529f2.js";
+      crossorigin = "anonymous";
+    </script>
+  </body>
+</html>

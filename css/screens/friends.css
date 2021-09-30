@@ -1,0 +1,103 @@
+.header-title {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.header-title__text {
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.user-bar {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-bar__column {
+    display: flex;
+    align-items: center;
+}
+
+.user-bar__img {
+    width: 50px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-bar__icon {
+    margin-left: 15px;
+}
+
+.user-bar__name {
+    font-weight: bold;
+}
+
+.friendlist-title {
+    border-top: 1px solid rgba(0,0,0,0.2);
+    margin: 20px;
+    display: flex;
+    padding: 20px;
+}
+
+.friendlist-title__text {
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.friendlist {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.friendlist__name {
+    color: rgba(0,0,0,0.7);
+}
+
+@keyframes hide-splash-screen{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.splash-screen {
+    background-color: var(--green);
+    position: absolute;
+    height:100vh;
+    width:100vw;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 128px;
+    color: white;
+    animation: hide-splash-screen 0.2s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+@keyframes icon-boomup {
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: translateY(-7px);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+.user-bar__column .fas:hover {
+    animation: icon-boomup 0.8s ease-in-out infinite;
+}
